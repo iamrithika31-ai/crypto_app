@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from database import SessionLocal, engine, Base   # ✅ FIXED
-from models import MarketData                     # ✅ FIXED
-from fetch_data import fetch_and_store            # ✅ FIXED
-from analytics import compute_analytics           # ✅ FIXED
-from strategy import simple_strategy              # ✅ FIXED
+from database import SessionLocal, engine, Base   
+from models import MarketData                     
+from fetch_data import fetch_and_store            
+from analytics import compute_analytics           
+from strategy import simple_strategy              
 import pandas as pd
 
 app = FastAPI(title="Crypto Market API")

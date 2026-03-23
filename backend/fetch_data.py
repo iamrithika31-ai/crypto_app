@@ -17,7 +17,7 @@ Base = declarative_base()
 # ===============================
 class MarketData(Base):
     __tablename__ = "market_data"
-    __table_args__ = {'extend_existing': True}  # ✅ Fix duplicate table error
+    __table_args__ = {'extend_existing': True} 
 
     id = Column(Integer, primary_key=True, index=True)
     symbol = Column(String, index=True)
